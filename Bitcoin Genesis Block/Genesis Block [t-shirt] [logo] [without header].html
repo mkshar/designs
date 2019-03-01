@@ -1,0 +1,89 @@
+<!-- public domain -->
+<!-- logo: https://github.com/roslinpl/bitcoin.it-promotional_graphics https://en.bitcoin.it/wiki/Promotional_graphics -->
+<!-- dump layout: https://t.me/m_shar-->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Bitcoin Genesis BLock | w/o file/record header | w/logo | t-shirt design</title>
+<style>
+	/* body { background-color: #f7f7d6; } */
+	em { font-style: normal; }
+	em.command                { color: #f7931a;/*navy;*/ font-weight: bold; }
+	em.script_headline_ascii  { color: #f7931a;/*red*/ font-weight: bold; }
+	td#command { width: 280pt; }
+	td#logo { background: url( "Bitcoin.logo.svg" ) no-repeat center; background-size: 260pt 260pt; text-align: center; }
+	*.terminal { font-family: monospace; }
+	*.side { width: 95pt; }
+	*.centered { text-align: center; }
+	*.mark { font-size: 4pt; }
+	*.addr { text-align: right; padding-right: 20pt; }
+</style>
+<script>
+function hide( id ) { document.getElementById( id ).style.display = "none"; }
+function hide_marks()
+{
+	hide( "show-marks" );
+	hide( "mark-upper" );
+	hide( "mark-lower" );
+}
+</script>
+</head>
+
+<body>
+
+<div id="show-marks"><input type="checkbox" id="marks" checked onchange="hide_marks()"/><label for="marks">Show marks</label></div>
+
+<table class="terminal" xborder="1">
+	<tr id="mark-upper"><td colspan="3" class="mark centered">[center]<br/>|</td></tr>
+	<tr>
+		<td class="side">&nbsp;</td>
+		<td class="centered" id="command">
+			<em class="command terminal">hexdump -C -s 8 -n 285 ~/.bitcoin/blocks/blk00000.dat</em>
+		</td>
+		<td class="side">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="centered">
+&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
+00000008<br/>00000018<br/>00000028<br/>00000038<br/>00000048<br/>00000058<br/>00000068<br/>00000078<br/>00000088<br/>00000098<br/>
+000000a8<br/>000000b8<br/>000000c8<br/>000000d8<br/>000000e8<br/>000000f8<br/>00000108<br/>00000118<br/>00000125<br/>&nbsp;<br/>
+&nbsp;<br/>&nbsp;
+		</td>
+		
+		<td id="logo">
+&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
+01 00 00 00 00 00 00 00&nbsp; 00 00 00 00 00 00 00 00<br/>00 00 00 00 00 00 00 00&nbsp; 00 00 00 00 00 00 00 00<br/>
+00 00 00 00 3b a3 ed fd&nbsp; 7a 7b 12 b2 7a c7 2c 3e<br/>67 76 8f 61 7f c8 1b c3&nbsp; 88 8a 51 32 3a 9f b8 aa<br/>
+4b 1e 5e 4a 29 ab 5f 49&nbsp; ff ff 00 1d 1d ac 2b 7c<br/>01 01 00 00 00 01 00 00&nbsp; 00 00 00 00 00 00 00 00<br/>
+00 00 00 00 00 00 00 00&nbsp; 00 00 00 00 00 00 00 00<br/>00 00 00 00 00 00 ff ff&nbsp; ff ff 4d 04 ff ff 00 1d<br/>
+01 04 45 54 68 65 20 54&nbsp; 69 6d 65 73 20 30 33 2f<br/>4a 61 6e 2f 32 30 30 39&nbsp; 20 43 68 61 6e 63 65 6c<br/>
+6c 6f 72 20 6f 6e 20 62&nbsp; 72 69 6e 6b 20 6f 66 20<br/>73 65 63 6f 6e 64 20 62&nbsp; 61 69 6c 6f 75 74 20 66<br/>
+6f 72 20 62 61 6e 6b 73&nbsp; ff ff ff ff 01 00 f2 05<br/>2a 01 00 00 00 43 41 04&nbsp; 67 8a fd b0 fe 55 48 27<br/>                                                                                                                                                                                                                     
+19 67 f1 a6 71 30 b7 10&nbsp; 5c d6 a8 28 e0 39 09 a6<br/>79 62 e0 ea 1f 61 de b6&nbsp; 49 f6 bc 3f 4c ef 38 c4<br/>                                                                                                                                                                           
+f3 55 04 e5 1e c1 12 de&nbsp; 5c 38 4d f7 ba 0b 8d 57<br/>8a 4c 70 2b 6b f1 1d 5f&nbsp;
+ac 00 00 00 00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>&nbsp;<br/>&nbsp;
+		</td>
+
+		<td>
+&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
+|................|<br/>|................|<br/>|....;...z{..z.,&gt;|<br/>|gv.a......Q2:...|<br/>
+|K.^J)._I......+||<br/>|................|<br/>|................|<br/>|..........M.....|<br/>
+|..E<em class="script_headline_ascii">The Times 03/</em>|<br/>
+|<em class="script_headline_ascii">Jan/2009 Chancel</em>|<br/>
+|<em class="script_headline_ascii">lor on brink of </em>|<br/>
+|<em class="script_headline_ascii">second bailout f</em>|<br/>
+|<em class="script_headline_ascii">or banks</em>........|<br/>
+|*....CA.g....UH'|<br/>|.g..q0..\..(.9..|<br/>|yb...a..I..?L.8.|<br/>|.U......\8M....W|<br/>|.Lp+k.._.....|<br/>
+&nbsp;<br/>
+&nbsp;<br/>&nbsp;<br/>&nbsp;
+		</td>
+	</tr>
+	
+	<tr id="mark-lower"><td colspan="3" class="mark centered">|<br/>[center]</td></tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+public domain
+origin: https://github.com/roslinpl/bitcoin.it-promotional_graphics
+see-also: https://en.bitcoin.it/wiki/Promotional_graphics

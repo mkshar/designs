@@ -1,0 +1,82 @@
+<!-- public domain -->
+<!-- dump layout: https://t.me/m_shar-->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Bitcoin Genesis BLock | incl. file/record header | w/o logo | cup design</title>
+<style>
+	/* body { background-color: #f7f7d6; } */
+	
+	em { font-style: normal; }
+	
+	em.command                { color:            navy;    font-weight: bold; }	
+	
+	em.headline               { color:            red;     font-weight: bold; }
+	
+	/* record header */
+	em.magic                  { background-color: #9999ff; }
+	em.block_size             { background-color: yellow;  }
+	
+	/* block header */
+	em.header_version         { background-color: #9999ff; }
+	em.prev_block_header_hash { background-color: green;   color: black; }
+	em.merkle_root_hash       { background-color: lime;    }
+	em.time                   { background-color: red;     }
+	em.difficulty             { background-color: yellow;  }
+	em.nonce                  { background-color: #ff6666; }
+	
+	em.tx_count               { background-color: yellow;  }
+	em.tx_version             { background-color: #9999ff; }
+	em.txi_count              { background-color: yellow;  }
+	em.txi_hash               { background-color: green;   color: black; }
+	em.txi_index              { background-color: #9999ff; }
+	em.script_size            { background-color: #ff6666; }
+	em.script                 { background-color: #ff6666; }
+	em.script_headline        { background-color: red;     font-weight: normal; }
+	em.script_headline_ascii  { color:            red;     font-weight: bold;   }
+	em.sequence               { background-color: #9999ff; }
+	em.txo_count              { background-color: yellow;  }
+	em.amount                 { background-color: yellow;  }
+	em.pubkey_script_size     { background-color: lime;    }
+	em.pubkey_script          { background-color: lime;    }
+	em.lock_time              { background-color: yellow;  }
+</style>
+</head>
+
+<body>
+
+<table>
+	<tr>
+		<td>
+			<pre>
+			
+<em class="command">hexdump -C -n 293 ~/.bitcoin/blocks/blk00000.dat</em>
+00000000  <em class="magic">f9 be b4 d9</em> <em class="block_size">1d 01 00 00</em>  <em class="header_version">01 00 00 00</em> <em class="prev_block_header_hash">00 00 00 00 </em> |................|
+00000010 <em class="prev_block_header_hash"> 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 </em> |................|
+00000020 <em class="prev_block_header_hash"> 00 00 00 00 00 00 00 00  00 00 00 00</em> <em class="merkle_root_hash">3b a3 ed fd </em> |............;...|
+00000030 <em class="merkle_root_hash"> 7a 7b 12 b2 7a c7 2c 3e  67 76 8f 61 7f c8 1b c3 </em> |z{..z.,&gt;gv.a....|
+00000040 <em class="merkle_root_hash"> 88 8a 51 32 3a 9f b8 aa  4b 1e 5e 4a</em> <em class="time">29 ab 5f 49</em>  |..Q2:...K.^J)._I|
+00000050  <em class="difficulty">ff ff 00 1d</em> <em class="nonce">1d ac 2b 7c</em>  <em class="tx_count">01</em> <em class="tx_version">01 00 00 00</em> <em class="txi_count">01</em> <em class="txi_hash">00 00 </em> |......+|........|
+00000060 <em class="txi_hash"> 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 </em> |................|
+00000070 <em class="txi_hash"> 00 00 00 00 00 00 00 00  00 00 00 00 00 00</em> <em class="txi_index">ff ff </em> |................|
+00000080 <em class="txi_index"> ff ff</em> <em class="script_size">4d</em> <em class="script">04 ff ff 00 1d  01 04 45 </em><em class="script_headline">54 68 65 20 54 </em> |..M.......E<em class="script_headline_ascii">The T</em>|
+00000090 <em class="script_headline"> 69 6d 65 73 20 30 33 2f  4a 61 6e 2f 32 30 30 39 </em> |<em class="script_headline_ascii">imes 03/Jan/2009</em>|
+000000a0 <em class="script_headline"> 20 43 68 61 6e 63 65 6c  6c 6f 72 20 6f 6e 20 62 </em> |<em class="script_headline_ascii"> Chancellor on b</em>|
+000000b0 <em class="script_headline"> 72 69 6e 6b 20 6f 66 20  73 65 63 6f 6e 64 20 62 </em> |<em class="script_headline_ascii">rink of second b</em>|
+000000c0 <em class="script_headline"> 61 69 6c 6f 75 74 20 66  6f 72 20 62 61 6e 6b 73</em>  |<em class="script_headline_ascii">ailout for banks</em>|
+000000d0  <em class="sequence">ff ff ff ff</em> <em class="txo_count">01</em> <em class="amount">00 f2 05  2a 01 00 00 00</em> <em class="pubkey_script_size">43</em> <em class="pubkey_script">41 04 </em> |........*....CA.|                                                                                                                                                                                                                                                      
+000000e0 <em class="pubkey_script"> 67 8a fd b0 fe 55 48 27  19 67 f1 a6 71 30 b7 10 </em> |g....UH'.g..q0..|                                                                                                                                                                                                                                                      
+000000f0 <em class="pubkey_script"> 5c d6 a8 28 e0 39 09 a6  79 62 e0 ea 1f 61 de b6 </em> |\..(.9..yb...a..|                                                                                                                                                                                                                                                      
+00000100 <em class="pubkey_script"> 49 f6 bc 3f 4c ef 38 c4  f3 55 04 e5 1e c1 12 de </em> |I..?L.8..U......|
+00000110 <em class="pubkey_script"> 5c 38 4d f7 ba 0b 8d 57  8a 4c 70 2b 6b f1 1d 5f </em> |\8M....W.Lp+k.._|
+00000120 <em class="pubkey_script"> ac</em> <em class="lock_time">00 00 00 00</em>                                    |.....|
+00000125
+
+			</pre>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
